@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLearn Helper - Nhắc Code</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-icon">💡</span>
+        <div class="brand-text">
+          <h1>CodeLearn Snippets</h1>
+          <p>Chuẩn VS Code IntelliSense</p>
+        </div>
+      </div>
+      <div class="lang-selector">
+        <button class="lang-btn active" data-lang="python">
+          <span class="lang-icon">🐍</span> Python 3
+        </button>
+        <button class="lang-btn" data-lang="cpp">
+          <span class="lang-icon">⚡</span> C++
+        </button>
+      </div>
+    </header>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-section">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Gõ tìm kiếm hoặc prefix (fastio, cin, vec, fori)..." autocomplete="off">
+        <button id="clear-search-btn" class="clear-btn" title="Xóa tìm kiếm">✕</button>
+      </div>
+      
+      <!-- Category Chips -->
+      <div class="category-chips-wrapper">
+        <div class="category-chips" id="category-chips">
+          <!-- Dynamic category pills -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Snippet Count Status -->
+    <div class="status-bar">
+      <span id="result-count">Hiển thị tất cả lệnh</span>
+      <span class="shortcut-tip">Mẹo: Gõ <b>prefix + Tab</b> trong khung code để chèn</span>
+    </div>
+
+    <!-- Snippet List -->
+    <main class="snippets-container" id="snippets-container">
+      <!-- Snippet cards will be rendered dynamically -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <span>Dành cho <b>CodeLearn.io</b></span>
+      <a href="https://codelearn.io" target="_blank" rel="noopener noreferrer" class="footer-link">Mở CodeLearn ↗</a>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast">Đã sao chép vào bộ nhớ tạm!</div>
+
+  <script src="../data/snippets.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
