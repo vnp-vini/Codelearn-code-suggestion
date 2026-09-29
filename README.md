@@ -2,6 +2,8 @@
 
 Tiện ích mở rộng cho Google Chrome hoạt động **giống như các extension Snippets / IntelliSense trong VS Code**, được tích hợp sâu vào trình soạn thảo **Monaco Editor** trên trang [https://codelearn.io](https://codelearn.io).
 
+Hiện tại chỉ hỗ trợ Python và C++
+
 ---
 
 ## ⚡ Các tính năng chuẩn VS Code
